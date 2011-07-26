@@ -11,7 +11,6 @@
       @import url("./css/site.css");
     </style>
     <link rel="stylesheet" href="./css/print.css" type="text/css" media="print" />
-      <meta name="author" content="Alexis Thaveau" />
     <meta name="Date-Revision-yyyymmdd" content="20110726" />
     <meta http-equiv="Content-Language" content="en" />
         
@@ -95,10 +94,10 @@
 			<p>
 				The simplest way is to generate your project with the archetype :
 				</p><div class="source"><pre>
-mvn archetype:generate 
-    -DarchetypeRepository=http://www.esigate.org/maven/repository 
-    -DarchetypeArtifactId=webassembletool-staticassembly-archetype
-    -DarchetypeGroupId=net.sourceforge.webassembletool.maven  -DarchetypeVersion=RELEASE
+mvn archetype:generate
+	-DarchetypeRepository=http://smile-sa.github.com/maven-repository/releases
+	-DarchetypeGroupId=org.fast.archetype
+	-DarchetypeArtifactId=fast-archetype
 </pre></div>
 			
 		</div>
@@ -114,10 +113,14 @@ mvn archetype:generate
   &lt;build&gt;
     [...]
     &lt;plugins&gt;
-       &lt;plugin&gt;
-          &lt;groupId&gt;net.sourceforge.webassembletool.maven&lt;/groupId&gt;
-          &lt;artifactId&gt;webassembletool-staticassembly-plugin&lt;/artifactId&gt;
-       &lt;/plugin&gt;
+		&lt;plugin&gt;
+			&lt;groupId&gt;org.fast.maven.plugin&lt;/groupId&gt;
+			&lt;artifactId&gt;maven-fast-plugin&lt;/artifactId&gt;
+			&lt;version&gt;${currentVersion}&lt;/version&gt;
+			&lt;configuration&gt;
+				&lt;charset&gt;UTF-8&lt;/charset&gt;
+			&lt;/configuration&gt;
+		&lt;/plugin&gt;
        [...]
 &lt;/project&gt;
 </pre></div>
@@ -127,11 +130,11 @@ mvn archetype:generate
 				</p>
 			<div class="source"><pre>
 &lt;pluginRepositories&gt;
-    &lt;pluginRepository&gt;
-        &lt;id&gt;esigate-repository&lt;/id&gt;
-        &lt;name&gt;ESIGate repository&lt;/name&gt;
-        &lt;url&gt;http://www.esigate.org/maven/repository&lt;/url&gt;
-    &lt;/pluginRepository&gt;
+	&lt;pluginRepository&gt;
+		&lt;id&gt;smile-github-repository&lt;/id&gt;
+		&lt;name&gt;Smile Github repository&lt;/name&gt;
+		&lt;url&gt;http://smile-sa.github.com/maven-repository/releases&lt;/url&gt;
+	&lt;/pluginRepository&gt;
 &lt;/pluginRepositories&gt;
 </pre></div>
 
@@ -152,8 +155,8 @@ mvn archetype:generate
 	<p>To bind the plugin to the standard build lifecycle : </p>	
 	<div class="source"><pre>
 &lt;plugin&gt;
-	&lt;groupId&gt;net.sourceforge.webassembletool.maven&lt;/groupId&gt;
-	&lt;artifactId&gt;webassembletool-staticassembly-plugin&lt;/artifactId&gt;
+	&lt;groupId&gt;org.fast.maven.plugin&lt;/groupId&gt;
+	&lt;artifactId&gt;maven-fast-plugin&lt;/artifactId&gt;
 	&lt;version&gt;${currentVersion}&lt;/version&gt;
 	&lt;executions&gt;
 		&lt;execution&gt;
