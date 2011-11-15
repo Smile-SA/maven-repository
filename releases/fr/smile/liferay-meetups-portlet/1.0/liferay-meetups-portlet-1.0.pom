@@ -1,0 +1,285 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- ====================== -->
+	<!-- = Project definition = -->
+	<!-- ====================== -->
+	<groupId>fr.smile</groupId>
+	<name>liferay-meetups-portlet</name>
+	<artifactId>liferay-meetups-portlet</artifactId>
+	<packaging>war</packaging>
+	<version>1.0</version>
+	<description>Liferay social network meetups portlet with a space scope (not a portal one)</description>
+	<url>https://github.com/Smile-SA/liferay-meetups-portlet</url>
+
+	<!-- =========== -->
+	<!-- = License = -->
+	<!-- =========== -->
+	<licenses>
+		<license>
+			<name>GNU Library or "Lesser" General Public License, version 3.0 (LGPLv3)</name>
+			<url>http://www.gnu.org/licenses/lgpl.txt</url>
+		</license>
+	</licenses>
+
+	<!-- ======= -->
+	<!-- = SCM = -->
+	<!-- ======= -->
+	<scm>
+		<url>https://github.com/Smile-SA/liferay-meetups-portlet/</url>
+		<connection>scm:git:git://github.com/Smile-SA/liferay-meetups-portlet.git</connection>
+		<developerConnection>scm:git:git+ssh://git@github.com/Smile-SA/liferay-meetups-portlet.git</developerConnection>
+	</scm>
+
+	<!-- ============== -->
+	<!-- = Bugtracker = -->
+	<!-- ============== -->
+	<issueManagement>
+		<system>Github</system>
+		<url>https://github.com/Smile-SA/liferay-meetups-portlet</url>
+	</issueManagement>
+
+	<!-- ================= -->
+	<!-- = Project owner = -->
+	<!-- ================= -->
+	<organization>
+		<name>Smile</name>
+		<url>http://www.smile.fr</url>
+	</organization>
+	<developers>
+		<developer>
+			<id>bsimard</id>
+			<name>Benoît SIMARD</name>
+			<email>benoit.simard@smile.fr</email>
+		</developer>
+	</developers>
+
+	<!-- ============== -->
+	<!-- = Properties = -->
+	<!-- ============== -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<liferay.version>6.0.12</liferay.version><!-- = 6.0.12 EE -->
+		<servlet-api.version>2.4</servlet-api.version>
+		<portlet-api.version>2.0</portlet-api.version>
+		<jsp-api.version>2.0</jsp-api.version>
+		<taglibs.version>1.1.2</taglibs.version>
+		<jstl.version>1.1.2</jstl.version>
+	</properties>
+
+	<!-- =========================== -->
+	<!-- = Dependencies management = -->
+	<!-- =========================== -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.liferay.portal</groupId>
+				<artifactId>portal-impl</artifactId>
+				<version>${liferay.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.liferay.portal</groupId>
+				<artifactId>portal-service</artifactId>
+				<version>${liferay.version}</version>
+				<scope>provided</scope>
+				<exclusions>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.liferay.portal</groupId>
+				<artifactId>util-bridges</artifactId>
+				<version>${liferay.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>taglibs</groupId>
+				<artifactId>standard</artifactId>
+				<version>${taglibs.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>jstl</artifactId>
+				<version>${jstl.version}</version>
+				<scope>runtime</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.portlet</groupId>
+				<artifactId>portlet-api</artifactId>
+				<version>${portlet-api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>javax.servlet</groupId>
+				<artifactId>servlet-api</artifactId>
+				<version>${servlet-api.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.liferay.portal</groupId>
+				<artifactId>util-java</artifactId>
+				<version>${liferay.version}</version>
+				<scope>provided</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<!-- ======================== -->
+	<!-- = Project dependencies = -->
+	<!-- ======================== -->
+	<dependencies>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-impl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>portal-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-bridges</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.portlet</groupId>
+			<artifactId>portlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.liferay.portal</groupId>
+			<artifactId>util-java</artifactId>
+		</dependency>
+	</dependencies>
+
+	<!-- ========= -->
+	<!-- = Build = -->
+	<!-- ========= -->
+	<build>
+		<finalName>${project.artifactId}</finalName>
+		<resources>
+			<resource>
+				<filtering>true</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+		</resources>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-resources-plugin</artifactId>
+					<version>2.5</version>
+					<configuration>
+						<encoding>ISO-8859-1</encoding>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>2.3.2</version>
+					<configuration>
+						<encoding>UTF-8</encoding>
+						<source>1.6</source>
+						<target>1.6</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-deploy-plugin</artifactId>
+					<version>2.6</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-clean-plugin</artifactId>
+					<version>2.4.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<version>2.3.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.1.1</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>2.2</version>
+					<configuration>
+						<arguments>-DaltDeploymentRepository=/${altDeploymentRepository}</arguments>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- =========================== -->
+	<!-- = Distribution management = -->
+	<!-- =========================== -->
+	<distributionManagement>
+		<repository>
+			<id>maven-repository-releases</id>
+			<url>http://smile-sa.github.com/maven-repository/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven-repository-snapshots</id>
+			<url>http://smile-sa.github.com/maven-repository/snapshots</url>
+		</snapshotRepository>
+		<site>
+			<id>maven-repository-doc</id>
+			<url>org.fast.maven.plugin.maven-fast-plugin</url>
+		</site>
+	</distributionManagement>
+
+	<!-- ==================== -->
+	<!-- = Maven Repository = -->
+	<!-- ==================== -->
+	<repositories>
+		<repository>
+			<id>smile.addon</id>
+			<url>http://smile-sa.github.com/maven-repository/releases-addon/</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+</project>
