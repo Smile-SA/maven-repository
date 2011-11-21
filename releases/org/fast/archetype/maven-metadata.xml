@@ -6,5 +6,20 @@
       <prefix>fast-archetype</prefix>
       <artifactId>fast-archetype</artifactId>
     </plugin>
+    <plugin>
+      <name>fast-archetype-simple</name>
+      <prefix>fast-archetype-simple</prefix>
+      <artifactId>fast-archetype-simple</artifactId>
+    </plugin>
+    <plugin>
+      <name>fast-archetype-yui3</name>
+      <prefix>fast-archetype-yui3</prefix>
+      <artifactId>fast-archetype-yui3</artifactId>
+    </plugin>
+    <plugin>
+      <name>fast-archetype-960gs</name>
+      <prefix>fast-archetype-960gs</prefix>
+      <artifactId>fast-archetype-960gs</artifactId>
+    </plugin>
   </plugins>
 </metadata>
