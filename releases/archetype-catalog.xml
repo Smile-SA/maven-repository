@@ -42,6 +42,18 @@
     <archetype>
       <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-yui3</artifactId>
+      <version>2.3</version>
+      <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-yui3</artifactId>
+      <version>2.3</version>
+      <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-yui3</artifactId>
       <version>2.2</version>
       <description>maven-fast-archetype</description>
     </archetype>
@@ -54,6 +66,18 @@
     <archetype>
       <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-960gs</artifactId>
+      <version>2.3</version>
+      <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-960gs</artifactId>
+      <version>2.3</version>
+      <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-960gs</artifactId>
       <version>2.2</version>
       <description>maven-fast-archetype</description>
     </archetype>
@@ -61,6 +85,18 @@
       <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-960gs</artifactId>
       <version>2.2</version>
+      <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-simple</artifactId>
+      <version>2.3</version>
+      <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-simple</artifactId>
+      <version>2.3</version>
       <description>maven-fast-archetype</description>
     </archetype>
     <archetype>
