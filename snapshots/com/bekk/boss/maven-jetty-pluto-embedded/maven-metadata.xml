@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.bekk.boss</groupId>
+  <artifactId>maven-jetty-pluto-embedded</artifactId>
+  <versioning>
+    <versions>
+      <version>2.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120529135828</lastUpdated>
+  </versioning>
+</metadata>
