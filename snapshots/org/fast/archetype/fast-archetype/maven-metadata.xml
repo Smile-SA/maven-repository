@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.fast.archetype</groupId>
+  <artifactId>fast-archetype</artifactId>
+  <versioning>
+    <versions>
+      <version>2.4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20120530132412</lastUpdated>
+  </versioning>
+</metadata>
