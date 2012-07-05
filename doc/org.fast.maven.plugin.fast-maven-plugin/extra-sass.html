@@ -3,7 +3,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>fast-maven-plugin - Issue Tracking</title>
+    <title>fast-maven-plugin - 
+		Extra</title>
     <style type="text/css" media="all">
       @import url("./css/maven-base.css");
       @import url("./css/maven-theme.css");
@@ -71,52 +72,14 @@
                           <a href="extra-less.html" title="LESS">LESS</a>
             </li>
                   <li class="none">
-                          <a href="extra-sass.html" title="SASS">SASS</a>
-            </li>
+            <strong>SASS</strong>
+          </li>
           </ul>
                        <h5>Project Documentation</h5>
                   <ul>
-                                                                                                                                                                                                                                                                                    <li class="expanded">
+                                                                                                                                                                                                                                                                          <li class="collapsed">
                           <a href="project-info.html" title="Project Information">Project Information</a>
-                    <ul>
-                      <li class="none">
-                          <a href="distribution-management.html" title="Distribution Management">Distribution Management</a>
-            </li>
-                      <li class="none">
-                          <a href="index.html" title="About">About</a>
-            </li>
-                      <li class="none">
-                          <a href="dependencies.html" title="Dependencies">Dependencies</a>
-            </li>
-                      <li class="none">
-            <strong>Issue Tracking</strong>
-          </li>
-                      <li class="none">
-                          <a href="plugins.html" title="Project Plugins">Project Plugins</a>
-            </li>
-                      <li class="none">
-                          <a href="integration.html" title="Continuous Integration">Continuous Integration</a>
-            </li>
-                      <li class="none">
-                          <a href="license.html" title="Project License">Project License</a>
-            </li>
-                      <li class="none">
-                          <a href="mail-lists.html" title="Mailing Lists">Mailing Lists</a>
-            </li>
-                      <li class="none">
-                          <a href="team-list.html" title="Project Team">Project Team</a>
-            </li>
-                      <li class="none">
-                          <a href="source-repository.html" title="Source Repository">Source Repository</a>
-            </li>
-                      <li class="none">
-                          <a href="plugin-management.html" title="Plugin Management">Plugin Management</a>
-            </li>
-                      <li class="none">
-                          <a href="project-summary.html" title="Project Summary">Project Summary</a>
-            </li>
-              </ul>
-        </li>
+                  </li>
                                                                                                                           <li class="collapsed">
                           <a href="project-reports.html" title="Project Reports">Project Reports</a>
                   </li>
@@ -130,7 +93,34 @@
     </div>
     <div id="bodyColumn">
       <div id="contentBox">
-        <div class="section"><h2>Issue Tracking<a name="Issue_Tracking"></a></h2><a name="Issue_Tracking"></a><p>No issue management system is defined. Please check back at a later date.</p></div>
+        
+	
+		<div class="section"><h2>SASS<a name="SASS"></a></h2>
+			<p>
+				CSS preprocessors are useful tools to build coherent CSS files
+				<a class="externalLink" href="http://sass-lang.com">LESS</a> is one of them.
+			</p>
+			<p>
+				To use it with Maven, we'll use this <a class="externalLink" href="https://github.com/Jasig/sass-maven-plugin">SASS maven plugin</a>
+			</p>
+			<div class="source"><pre>
+&lt;build&gt;
+	&lt;plugins&gt;
+		&lt;plugin&gt;
+			&lt;groupId&gt;org.jasig.maven&lt;/groupId&gt;
+			&lt;artifactId&gt;sass-maven-plugin&lt;/artifactId&gt;
+			&lt;configuration&gt;
+				&lt;sassSourceDirectory&gt;${project.basedir}/src/main/resources/sass&lt;/sassSourceDirectory&gt;
+				&lt;outputDirectory&gt;${project.build.directory}/generated-html/v1/css&lt;/outputDirectory&gt;
+				&lt;baseOutputDirectory&gt;${project.build.directory}/generated-html/v1/css&lt;/baseOutputDirectory&gt;
+			&lt;/configuration&gt;
+		&lt;/plugin&gt;
+	&lt;/plugins&gt;
+&lt;/build&gt;
+</pre></div>
+		</div>
+	
+
       </div>
     </div>
     <div class="clear">
