@@ -101,6 +101,18 @@
     </archetype>
     <archetype>
       <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-yui3</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-yui3</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-yui3</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-yui3</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-twitterbootstrap</artifactId>
       <version>2.9</version>
       <description>fast-archetype-twitterbootstrap</description>
@@ -109,6 +121,18 @@
       <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-twitterbootstrap</artifactId>
       <version>2.9</version>
+      <description>fast-archetype-twitterbootstrap</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-twitterbootstrap</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-twitterbootstrap</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-twitterbootstrap</artifactId>
+      <version>2.10</version>
       <description>fast-archetype-twitterbootstrap</description>
     </archetype>
     <archetype>
@@ -133,6 +157,18 @@
       <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-liferay-6.1.0-ce</artifactId>
       <version>2.8</version>
+      <description>fast-archetype-liferay-6.1.0-ce</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-liferay-6.1.0-ce</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-liferay-6.1.0-ce</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-liferay-6.1.0-ce</artifactId>
+      <version>2.10</version>
       <description>fast-archetype-liferay-6.1.0-ce</description>
     </archetype>
     <archetype>
@@ -149,6 +185,18 @@
     </archetype>
     <archetype>
       <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-rbs-3.6.1</artifactId>
+      <version>2.10</version>
+      <description>fast-solaris-b2c</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-rbs-3.6.1</artifactId>
+      <version>2.10</version>
+      <description>fast-solaris-b2c</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-960gs</artifactId>
       <version>2.6</version>
       <description>maven-fast-archetype</description>
@@ -245,6 +293,18 @@
     </archetype>
     <archetype>
       <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-960gs</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-960gs</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-960gs</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-960gs</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-simple</artifactId>
       <version>2.6</version>
       <description>maven-fast-archetype</description>
@@ -338,6 +398,18 @@
       <artifactId>fast-archetype-simple</artifactId>
       <version>2.2</version>
       <description>maven-fast-archetype</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-simple</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-simple</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-simple</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-simple</description>
     </archetype>
     <archetype>
       <groupId>org.fast.archetype</groupId>
@@ -349,6 +421,18 @@
       <groupId>org.fast.archetype</groupId>
       <artifactId>fast-archetype-sass</artifactId>
       <version>2.9</version>
+      <description>fast-archetype-sass</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-sass</artifactId>
+      <version>2.10</version>
+      <description>fast-archetype-sass</description>
+    </archetype>
+    <archetype>
+      <groupId>org.fast.archetype</groupId>
+      <artifactId>fast-archetype-sass</artifactId>
+      <version>2.10</version>
       <description>fast-archetype-sass</description>
     </archetype>
   </archetypes>
