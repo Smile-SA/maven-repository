@@ -1,6 +1,6 @@
 # Smile-SA : Maven repository
 
-This branch contains all the deployed artifacts.
+This project hosts all the deployed artifacts on its gh-pages branche, you can check it here : [Smile Maven repository](http://smile-sa.github.com/maven-repository).
 
 You can access repositories through those links :
 
